@@ -25,7 +25,8 @@ points: [
   {
     title: "Universitas Mercu Buana Yogyakarta",
     sub: "S1 Informatika",
-    year: "2022–2026"
+    year: "2022–2026",
+    gpa: "3,36/4,00"
   },
   {
     title: "Coding Camp 2025",

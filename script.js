@@ -16,9 +16,23 @@ $('aboutText').textContent = D.about.text;
 D.about.stats.forEach(s => $('aboutStats').append(h('div', '', `<b>${s.num}</b><span>${s.label}</span>`)));
 
 // Education & experience
-D.education.forEach(e => $('eduList').append(h('div', 'item', `<span class="yr">${e.year}</span><b>${e.title}</b><span>${e.sub}</span>`)));
-D.experience.forEach(e => $('expList').append(h('li', '', `<span class="yr">${e.year}</span><b>${e.title}</b><em>${e.place}</em><p>${e.desc}</p>`)));
+D.education.forEach(e => $('eduList').append(
+  h('div', 'item', `
+    <span class="yr">${e.year}</span>
+    <b>${e.title}</b>
+    <span>${e.sub}</span>
+    <span>IPK: ${e.gpa}</span>
+  `)
+));
 
+D.experience.forEach(e => $('expList').append(
+  h('li', '', `
+    <span class="yr">${e.year}</span>
+    <b>${e.title}</b>
+    <em>${e.place}</em>
+    <p>${e.desc}</p>
+  `)
+));
 // Skills
 D.skills.technical.forEach(s => $('techList').append(h('span', 'tech', `<i class="${s.icon}"></i><small>${s.name}</small>`)));
 D.skills.soft.forEach(s => $('softList').append(h('span', 'chip', s)));
