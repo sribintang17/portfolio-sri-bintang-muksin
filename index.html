@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <a href="#home" class="logo"><b id="navRole"></b></a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">Tentang</a><a href="#journey">Pendidikan</a><a href="#skills">Skills</a>
+    <a href="#projects">Projek</a><a href="#certs">Sertifikat</a><a href="#contact">Kontak</a>
+  </nav>
+</header>
+
+<!-- 1. HERO (semua teks diisi dari data.js) -->
+<section id="home" class="hero">
+  <div class="bgword" aria-hidden="true">PORTOFOLIO</div>
+  <img class="hero-photo" id="heroPhoto" alt="Foto profil">
+  <div class="hero-left">
+    <span class="script">Hello, I'm</span>
+    <h1 id="heroName"></h1>
+    <p id="heroIntro"></p>
+    <small id="heroLoc"></small>
+  </div>
+  <div class="hero-right">
+    <p id="heroTagline" class="tagline"></p>
+    <ul id="heroPoints"></ul>
+  </div>
+</section>
+
+<!-- 2. TENTANG -->
+<section id="about" class="sec split">
+  <h2 class="reveal">Tentang saya</h2>
+  <div class="reveal" style="--d:.15s"><p id="aboutText" class="lead"></p>
+    <div class="stats" id="aboutStats"></div></div>
+</section>
+
+<!-- 3. PENDIDIKAN + PENGALAMAN -->
+<section id="journey" class="sec">
+  <div class="cols">
+    <div class="reveal"><h2>Pendidikan</h2><div id="eduList"></div></div>
+    <div class="reveal" style="--d:.15s"><h2>Pengalaman</h2><ol class="timeline" id="expList"></ol></div>
+  </div>
+</section>
+
+<!-- 4. SKILL -->
+<section id="skills" class="sec">
+  <h2 class="reveal">Skills</h2>
+  <div class="cols">
+    <div class="reveal" style="--d:.15s">
+      <h3>Technical Skills</h3>
+      <div class="chips" id="techList"></div>
+    </div>
+    <div class="reveal" style="--d:.3s">
+      <h3>Soft Skills</h3>
+      <div class="chips" id="softList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PROJEK -->
+<section id="projects" class="sec">
+  <h2 class="reveal">Projek Saya</h2>
+  <div class="grid projects" id="projectList"></div>
+</section>
+
+<!-- 6. SERTIFIKAT -->
+<section id="certs" class="sec">
+  <h2 class="reveal">Sertifikat</h2>
+  <div class="grid certs" id="certList"></div>
+</section>
+
+<!-- 7. KONTAK -->
+<section id="contact" class="sec contact">
+  <h2 class="reveal">Let's work<br>together</h2>
+<div class="reveal" style="--d:.15s"><p id="contactText" class="lead"></p><div class="contact-list" id="contactList"></div></div>
+</section>
+
+<footer id="footer"></footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
