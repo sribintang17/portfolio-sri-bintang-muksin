@@ -21,16 +21,16 @@ points: [
     stats: []
   },
 
-  education: [
+education: [
   {
     title: "Universitas Mercu Buana Yogyakarta",
     sub: "S1 Informatika",
-    year: "2022–2026",
-    gpa: "3,36/4,00"
+    ipk: "3,36/4,00",
+    year: "2022–2026"
   },
   {
     title: "Coding Camp 2025",
-    sub: "Front-End & Back-End Development · Dicoding Indonesia, didukung DBS Foundation",
+    sub: "MBKM Semester 6 · Front-End & Back-End Development · Dicoding Indonesia, didukung DBS Foundation",
     year: "Februari–Juli 2025"
   },
   {
