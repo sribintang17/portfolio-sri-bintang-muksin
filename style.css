@@ -854,3 +854,30 @@ footer {
   background: var(--red);
   border-color: var(--red);
 }
+
+/* Pelatihan: dua kolom di desktop */
+#trainList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 4rem;
+}
+
+@media (max-width: 800px) {
+  #trainList {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Foto yudisium  */
+#journey .cols {
+  align-items: start;
+}
+
+.edu-photo {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 16px;
+}

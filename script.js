@@ -15,11 +15,16 @@ D.points.forEach(p => $('heroPoints').append(h('li', '', p)));
 $('aboutText').textContent = D.about.text;
 D.about.stats.forEach(s => $('aboutStats').append(h('div', '', `<b>${s.num}</b><span>${s.label}</span>`)));
 
-// Education & experience
 D.education.forEach(e => $('eduList').append(h('div', 'item', `
   <span class="yr">${e.year}</span>
   <b>${e.title}</b>
   <span>${e.sub}${e.ipk ? ' · IPK: ' + e.ipk : ''}</span>
+`)));
+
+D.training.forEach(e => $('trainList').append(h('div', 'item', `
+  <span class="yr">${e.year}</span>
+  <b>${e.title}</b>
+  <span>${e.sub}</span>
 `)));
 
 D.experience.forEach(e => $('expList').append(

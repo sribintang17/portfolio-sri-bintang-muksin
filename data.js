@@ -27,16 +27,19 @@ education: [
     sub: "S1 Informatika",
     ipk: "3,36/4,00",
     year: "2022–2026"
+  }
+],
+
+training: [
+  {
+    title: "Coding Camp",
+    sub: "Intro to Software Engineering · RevoU",
+    year: "12–16 Oktober 2026"
   },
   {
     title: "Coding Camp 2025",
     sub: "MBKM Semester 6 · Front-End & Back-End Development · Dicoding Indonesia, didukung DBS Foundation",
     year: "Februari–Juli 2025"
-  },
-  {
-    title: "Coding Camp",
-    sub: "Intro to Software Engineering · RevoU",
-    year: "12–16 Oktober 2026"
   }
 ],
 
